@@ -1,0 +1,31 @@
+$blueDefault: #2196F3;
+$blueHover: #1E88E5;
+
+.app-header {
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	padding-inline: 4em;
+	height: 5em;
+	background-color: $blueDefault;
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.24);
+	@media (max-width: 980px) {
+		padding-inline: 0;
+		text-align: center;
+	}
+	&__button{
+		padding-inline: 2em;
+		height: 100%;
+		color: rgba(255, 255, 255, 0.7);
+		font-size: 1em;
+		transition: .2s;
+		@media (max-width: 980px) {
+			padding-inline: 0;
+			width: 50%;
+		}
+		&:hover, &.checked{
+			background-color: $blueHover;
+			color: #fff;
+		}
+	}
+}
